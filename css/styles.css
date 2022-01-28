@@ -535,7 +535,7 @@ address {
   left: 0;
 }
 .content-link:hover .content-img-text,
-.content-link:hover .content-img-text {
+.content-link:focus .content-img-text {
   transform: translateY(0);
 }
 /*Стилизация модельного окна*/
