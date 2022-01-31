@@ -203,7 +203,6 @@ address {
 .main-btn:hover,
 .main-btn:focus {
   background-color: var(--btn-color);
-  transition: background-color var(--transition);
 }
 .section {
   padding-top: 94px;
@@ -254,8 +253,7 @@ address {
   justify-content: center;
   align-items: center;
   color: var(--icon-color);
-  transition: background-color var(--transition);
-  transition: border-color var(--transition);
+  transition: border-color var(--transition), color var(--transition);
 }
 .clients-list {
   display: flex;
@@ -272,11 +270,9 @@ address {
 .clients-link:hover,
 .clients-link:focus {
   color: var(--accent-color);
-}
-.clients-link:hover,
-.clients-link:focus {
   border-color: var(--accent-color);
 }
+
 /*Стилизация pre-about*/
 .work {
   padding-top: 0px;
@@ -341,6 +337,7 @@ address {
 }
 .social-icon {
   fill: currentColor;
+  transition: var(--transition);
 }
 .social-link {
   width: 44px;
@@ -449,7 +446,8 @@ address {
   border-radius: 4px;
   border: 1px solid transparent;
   padding: 6px 22px;
-  transition: background-color var(--transition);
+  transition: background-color var(--transition), box-shadow var(--transition),
+    color var(--transition);
 }
 .filters-btn:hover,
 .filters-btn:focus,
@@ -473,7 +471,7 @@ address {
 .content-link {
   display: flex;
   flex-direction: column;
-  transition: background-color var(--transition);
+  transition: box-shadow var(--transition);
 }
 .content-link:hover,
 .content-link:focus {
@@ -524,7 +522,7 @@ address {
   color: var(--other-color);
   height: 100%;
   transform: translateY(100%);
-  transition: 250ms;
+  transition: transform var(--transition);
 }
 .content-div-text {
   position: relative;
@@ -556,6 +554,7 @@ address {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  transition: transform var(--transition);
 }
 .modal-svg {
   width: 11px;
